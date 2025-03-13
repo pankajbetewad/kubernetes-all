@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-deployment
+  namespace: first-app-ns
+  labels:
+    app: portfolio-pankaj
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: portfolio-pankaj
+  template:
+    metadata:
+      labels:
+        app: portfolio-pankaj
+    spec:
+      containers:
+      - name: portfolio
+        image: pankajbetewad3/portfolio
+        ports:
+        - containerPort: 3000
+
