@@ -1,3 +1,4 @@
+```
     1  docker ps
     2  docker ps -a
     3  [ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.27.0/kind-linux-amd64
@@ -294,3 +295,4 @@
   294  ls
   295  kubectl delete -f .
   296  kubectl get pods
+```
